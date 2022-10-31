@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="positive">
+
+    <test name="authServiceTest">
+        <groups>
+            <define name="positive">
+
+                <include name="positive"/>
+            </define>
+
+            <run>
+                <include name="positive"/>
+            </run>
+
+        </groups>
+    </test>
+    <packages>
+        <package name="net.absoft"></package>
+    </packages>
+
+</suite>
